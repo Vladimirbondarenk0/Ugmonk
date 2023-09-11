@@ -1,0 +1,98 @@
+.loop {
+    padding: 80px 18px 130px 18px; 
+    background: #CED3CA;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 420px;
+        height: fit-content;
+    }
+
+    .title {
+        color: #1A1A1A;
+        text-align: center;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40.8px;
+    }
+
+    .descr {
+        color: #1A1A1A;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22.4px;
+        margin: 20px 23px 56px 23px;
+    }
+
+
+    form {
+        position: relative;
+        width: 300px;
+
+        input,
+        button {
+            outline: none;
+            border-radius: 8px;
+        }
+
+        input {
+            width: 100%;
+            height: 43px;
+            background: #fff;
+            padding: 10px 55px 10px 15px;
+            transition: all .4s;
+            box-shadow: 0px 9px 31px 6px rgba(0, 0, 0, .2);
+
+            &:focus { 
+                box-shadow: 0px 6px 21px 0px rgba(0, 0, 0, 0.20);
+            }
+
+            &:focus~button {
+                transition: all .4s;
+                background: #393939;
+
+                &:hover {
+                    background: #4b4b4b;
+                }
+            }
+
+
+        }
+
+        .error {
+            border: 0.0625rem solid #ffb1b1;
+            -webkit-box-shadow: 0 0 0.625rem red;
+            box-shadow: 0 1px 11px #ff9494;
+        }
+
+
+
+        button {
+            height: 26px;
+            width: 40px;
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            background: #b8b8b8;
+            cursor: pointer;
+            transition: all .4s;
+
+            &:hover {
+                background: #a2a2a2;
+            }
+        }
+
+    }
+
+    #email-error.error {
+        display: none !important;
+    }
+}

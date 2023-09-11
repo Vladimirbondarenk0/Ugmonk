@@ -1,0 +1,93 @@
+.analog {
+    background: url('/../Ugmonk/img/analog.jpg') center center/cover no-repeat;
+    min-height: 600px;
+    position: relative;
+
+    &_text {
+        position: absolute;
+        left: 140px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        bottom: 200px;
+        max-width: 360px;
+
+        span {
+            color: #F7F7F7;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 54px;
+        }
+
+        .button {
+            border: 1px solid #7E6E45;
+            background: #7E6E45;
+            width: 182px;
+            height: 40px;display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 1px;
+            padding: 10px;
+            transition: all .3s ease-in;
+
+            &::before {
+                display: none;
+            }
+
+            &:hover {
+                background: #6c5d3b;
+            }
+
+            span {
+                color: #F7F7F7;
+                text-align: center;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+            }
+        }
+
+        .link {
+            color: #F7F7F7;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22.5px;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            width: fit-content;
+            cursor: pointer;
+
+            &:hover {
+                color: #9f8a55;
+            }
+        }
+
+
+    }
+
+    .circle {
+        position: absolute;
+        top: 30px;
+        right: 70px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background: #7E6E45;
+        text-align: center; 
+        padding: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            color: #EAE7D9;
+            font-family: Roboto;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+        }
+    }
+}

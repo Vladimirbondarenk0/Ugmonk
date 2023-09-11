@@ -1,0 +1,65 @@
+   
+@import "base/reset";
+@import "base/variables";
+
+
+body { 
+    font-family: 'Roboto', Arial, Helvertica, sans-serif;
+    color: #000;
+    height: fit-content;
+    transition: height .3s ease;
+}
+
+// selection
+
+::-moz-selection {
+    color: #fff;
+    background-color: #9b9b9b8e;
+}
+
+::selection {
+    color: rgb(255, 255, 255);
+    background-color: #9e9e9e8b;
+}
+    
+// scrollbar 
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #C0C0C0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.632);
+    border-radius: 4px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #c1a29194;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 2px 2px 2px -5px rgba(49, 61, 70, 0.2) inset;
+}
+
+
+
+
+@import "/sass/blocks/_header";
+@import "/sass/blocks/_promo";
+@import "/sass/blocks/_catalog";
+@import "/sass/blocks/_waves";  
+@import "/sass/blocks/_analog";  
+@import "/sass/blocks/_journals";   
+@import "/sass/blocks/_mission";  
+@import "/sass/blocks/_studio";  
+@import "/sass/blocks/_loop";   
+@import "/sass/blocks/_loader"; 
+@import "/sass/blocks/_mobile-nav"; 
+@import "/sass/blocks/_nav-icon";  
+@import "/sass/blocks/_footer";  
+
+
+@import "base/media";

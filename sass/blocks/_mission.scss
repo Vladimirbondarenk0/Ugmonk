@@ -1,0 +1,71 @@
+.mission {
+    padding: 115px 0;
+    margin: 0 auto;
+    background: #F8F6F2;
+
+    .title {
+        color: #1A1A1A;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        max-width: 630px;
+
+
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        margin-top: 90px;
+        width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 70px;
+        column-gap: 115px;
+        grid-template-areas:
+            'men women'
+            'table table';
+
+        .item {
+            max-width: 522px;
+        }
+    }
+
+    .item:nth-child(1) {
+        grid-area: men;
+    }
+
+    .item:nth-child(2) {
+        grid-area: women;
+    }
+
+    .item:nth-child(3) {
+        grid-area: table;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .link {
+            align-self: flex-start !important;
+        }
+    }
+
+    .link {
+        grid-area: link;
+        justify-self: end;
+        width: fit-content;
+        background-color: #80808082;
+        color: #fff;
+        border-radius: 0px 0px 5px 5px;
+        padding: 3px 10px;
+        align-self: center;
+        transition: all .3s;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.778);
+            background-color: #70707082;
+        }
+    }
+}

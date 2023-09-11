@@ -1,0 +1,314 @@
+@media (max-width: 1200px) {
+    .header {
+        .wrapper1 {
+            .header_menu {
+                display: none;
+            }
+        }
+
+        .mobile-nav-btn {
+            display: flex;
+        }
+
+        .header_nav .nav ul img {
+            padding-left: 13px;
+            padding-right: 13px;
+            margin-right: 14px;
+            border-right: 1px solid rgba(141, 141, 141, .8666666667);
+        }
+
+        .header_nav form {
+            width: 100%;
+        }
+
+    }
+
+    .mission {
+        .wrapper {
+            margin: 90px 50px 0px 50px;
+            column-gap: 70px;
+
+
+        }
+
+        .title {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 992px) {
+    .header {
+        min-height: 150px;
+        padding: 30px 30px 30px 20px;
+        align-items: center;
+
+        .logo {
+            gap: 17px;
+        }
+    }
+
+    .promo .text {
+        left: 40px;
+    }
+
+    .nav-icon.nav-icon--active {
+        right: 17px;
+    }
+
+    .catalog_tabs {
+        gap: 15px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 60px;
+
+        .wrapper2 {
+            align-items: center;
+            flex-direction: row;
+
+            .logo {
+                align-items: center;
+                justify-content: center;
+
+                .descr {
+                    order: 1;
+                }
+
+                .logo_name {
+                    text-align: left;
+                }
+
+                .descr_2 {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {}
+
+@media (max-width: 768px) {
+    .analog_text span.tsh {
+        text-shadow: 2px 2px 4px black;
+        background-color: #7e6e45a9;
+        border: 7px solid #7e6e45;
+        padding: 10px 14px;
+        text-shadow: none;
+        font-size: 31px;
+        line-height: 45px;
+    }
+
+    .studio {
+        .title {
+            font-size: 28px;
+            line-height: 36px;
+            padding-bottom: 11px;
+        }
+    }
+
+    .journals .wrapper .section1 {
+        padding: 0 20px;
+        justify-content: center;
+        align-items: center;
+
+        .title,
+        .subtitle {
+            text-align: center;
+        }
+    }
+
+    .mission {
+        padding: 75px 0;
+
+        .wrapper {
+            margin: 50px 20px 0px 20px;
+            column-gap: 30px;
+            row-gap: 50px;
+        }
+
+        .title {
+            font-size: 27px;
+        }
+    }
+
+    .footer {
+        padding: 80px 0px 60px 0;
+
+        .wrapper2 {
+            flex-direction: column;
+
+            .logo {
+                flex-direction: column;
+
+                .descr {}
+
+                .logo_name,
+                .descr_2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header {
+        min-height: 130px;
+        padding: 20px 20px 20px 20px;
+
+        .logo {
+            gap: 8px;
+            font-size: 26px;
+
+            img {
+                width: 18px;
+                height: 32px;
+            }
+        }
+
+    }
+
+    .header_nav {
+        .nav ul li a {
+            font-size: 13px;
+        }
+
+        .nav ul li {
+            padding: 0 5px;
+        }
+
+        .nav ul img {
+            padding-left: 5px;
+            padding-right: 5px;
+            height: 17px;
+            margin: auto;
+        }
+    }
+
+    .catalog_tab {
+        padding: 6px;
+    }
+
+    .mobile-nav {
+        align-items: center;
+    }
+
+    .catalog {
+        padding: 35px 0 85px 0;
+
+        &_container {
+            padding-bottom: 50px;
+        }
+    }
+
+    .analog {
+        background: url(/img/analog.jpg) 48% center/cover no-repeat;
+
+        .circle {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+    }
+
+    .analog_text {
+        left: 30px;
+        bottom: 0px;
+        gap: 25px;
+        top: 56%;
+        transform: translateY(-50%);
+        height: fit-content;
+
+        span.tsh {
+            line-height: 43px;
+            padding-right: 20px;
+        }
+
+    }
+
+    .journals {
+        padding: 81px 0 20px 0;
+
+        .wrapper {
+            flex-direction: column;
+
+            .section1 {
+                min-height: 400px;
+            }
+
+            .section2 {
+                position: relative;
+                top: -55px;
+                left: 0;
+            }
+        }
+    }
+
+    .mission {
+        .wrapper {
+            margin: 50px 30px 0px 30px;
+            grid-template-areas:
+                "men men"
+                "women women"
+                "table table";
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .logo {
+        span {
+            display: none;
+        }
+    }
+
+    .header .logo img {
+        width: 23px;
+        height: 34px;
+    }
+
+    .header {
+        min-height: 130px;
+        padding: 15px;
+        gap: 18px;
+    }
+
+    .journals .wrapper .section1 .subtitle {
+        width: 80%;
+    }
+
+    .analog_text {
+        right: 30px;
+
+        span.tsh {
+            line-height: 38px;
+            padding-right: 10px;
+            font-size: 30px;
+
+        }
+    }
+
+    .mission .wrapper {
+        margin: 50px 10px 0px 10px;
+    }
+
+    .loop {
+        padding: 80px 18px 100px 18px;
+
+        form {
+            width: 90%;
+        }
+    }
+
+    .footer {
+        .wrapper1 {
+            gap: 36px;
+        }
+    }
+}
